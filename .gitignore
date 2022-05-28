@@ -1,14 +1,7 @@
+package-lock.json
 node_modules
 .docusaurus
 build
-docs/en/development
-docs/en/engines
-docs/en/getting-started
-docs/en/interfaces
-docs/en/operations
-docs/en/sql-reference
-docs/ru
-docs/zh
 
 **/.DS_Store
 run.sh
