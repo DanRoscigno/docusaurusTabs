@@ -2,6 +2,9 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 import TableSchema from '!!raw-loader!./_includeFiles/guides/NYPD/createTable';
+const cloudString = `ORDER BY complaint_begin`
+const osString = `ENGINE = MergeTree
+ORDER BY complaint_begin`
 
 # blah
 
@@ -15,14 +18,14 @@ In this step you will create the table for the NYPD Compaint dataset.
   <TabItem value="cloud" label="Cloud" default>
 <CodeBlock language="sql">
   {
-    TableSchema + 'ORDER BY complaint_begin'
+    TableSchema + cloudString
   }
 </CodeBlock>
   </TabItem>
   <TabItem value="oss" label="OSS">
 <CodeBlock language="sql">
   {
-    TableSchema + 'ENGINE = MergeTree \nORDER BY complaint_begin'
+    TableSchema + osString
   }
 </CodeBlock>
   </TabItem>
