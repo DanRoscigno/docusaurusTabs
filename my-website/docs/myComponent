@@ -31,3 +31,4 @@ CREATE TABLE NYPD_Complaint (
     NY_y_coordinate      UInt32,
     Latitude             Float64,
     Longitude            Float64
+)
