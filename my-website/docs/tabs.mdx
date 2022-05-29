@@ -13,11 +13,17 @@ In this step you will create the table for the NYPD Compaint dataset.
 
 <Tabs>
   <TabItem value="cloud" label="Cloud" default>
-<CodeBlock language="sql">{TableSchema + 'ORDER BY complaint_begin'}
+<CodeBlock language="sql">
+  {
+    TableSchema + 'ORDER BY complaint_begin'
+  }
 </CodeBlock>
   </TabItem>
   <TabItem value="oss" label="OSS">
-<CodeBlock language="sql">{TableSchema + 'ENGINE = MergeTree \nORDER BY complaint_begin'}
+<CodeBlock language="sql">
+  {
+    TableSchema + 'ENGINE = MergeTree \nORDER BY complaint_begin'
+  }
 </CodeBlock>
   </TabItem>
 </Tabs>
